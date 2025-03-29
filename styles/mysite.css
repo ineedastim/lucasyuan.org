@@ -1,0 +1,183 @@
+h1 {
+    font-size: 36px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    line-height: 1.75;
+    color: #bdbdbd;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    line-height: 1.75;
+    color: #bdbdbd;
+
+}
+
+#robots {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    color: #000000
+}
+
+/* #discordlink {
+    text-decoration: none;
+    color: #636cec
+} */
+
+#linkedinlink {
+    text-decoration: none;
+    color: #0077b5
+}
+
+#emaillink {
+    text-decoration: none;
+    color: #555555;
+}
+
+#hi {
+    font-size: 52px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    text-align: left;
+}
+
+#text {
+    font-size: 28px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin: 0px;
+    line-height: 1.75;
+}
+
+#build {
+    /* display: inline-block; */
+    font-size: 18px;
+    color: #bdbdbd;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#sitepic {
+    width: 20%;
+    height: auto;
+    border-radius: 50px;
+    margin-left: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #bdbdbd;
+}
+
+/* #discord {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #636cec;
+    background-color: #8ea2e9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    transition: all 0.25s ease-in-out;
+
+}
+
+#discord:hover {
+    transform: scale(.96);
+} */
+
+
+#linkedin {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0077b5;
+    background-color: #a9d6ee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    transition: all 0.25s ease-in-out;
+
+}
+
+#linkedin:hover {
+    transform: scale(.96);
+}
+
+#email {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #555555;
+    background-color: #dddddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    transition: all 0.25s ease-in-out;
+
+}
+
+#email:hover {
+    transform: scale(.96);
+}
+
+/* #contactrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    top: 30%;
+    left: 20%;
+}
+
+.flexcontent {
+    display: flex;
+    align-items: center;
+}
+
+.contentblock {
+    margin-left: 50px;
+}
