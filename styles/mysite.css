@@ -93,9 +93,19 @@ footer {
     height: auto;
     border-radius: 50px;
     margin-left: 20px;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     border-color: #bdbdbd;
+    box-shadow: 0px 0px 10px 2px #bdbdbd;
+    transition: all 0.25s ease-in-out;
+}
+
+#imagelink {
+    display: contents;
+}
+
+#sitepic:hover {
+    transform: scale(.99);
 }
 
 /* #discord {
