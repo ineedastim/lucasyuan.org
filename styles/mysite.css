@@ -50,6 +50,11 @@ footer {
     color: #555555;
 }
 
+#githublink {
+    text-decoration: underline;
+    color: #bdbdbd
+}
+
 #hi {
     font-size: 52px;
     font-family: "Manrope", sans-serif;
