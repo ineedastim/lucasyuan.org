@@ -1,5 +1,5 @@
 h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     margin-left: 40px;
@@ -56,7 +56,7 @@ footer {
 }
 
 #hi {
-    font-size: 52px;
+    font-size: 3.25rem;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -65,8 +65,15 @@ footer {
     text-align: left;
 }
 
+@media (max-width: 767px) {
+    #hi {
+        font-size: 2.25rem;
+    }
+}
+
+
 #text {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -76,9 +83,16 @@ footer {
     line-height: 1.75;
 }
 
+@media (max-width: 767px) {
+    #text {
+        font-size: 1rem;
+        /* Or a smaller size */
+    }
+}
+
 #build {
     /* display: inline-block; */
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #bdbdbd;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
@@ -91,13 +105,19 @@ footer {
 #sitepic {
     width: 20%;
     height: auto;
-    border-radius: 50px;
+    border-radius: 3.15rem;
     margin-left: 20px;
     border-width: 2px;
     border-style: solid;
     border-color: #bdbdbd;
     box-shadow: 0px 0px 10px 2px #bdbdbd;
     transition: all 0.25s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    #sitepic {
+        display: none;
+    }
 }
 
 #imagelink {
@@ -186,6 +206,17 @@ footer {
     align-items: center;
     top: 30%;
     left: 20%;
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        align-items: center;
+        top: 30%;
+        left: 0%;
+    }
 }
 
 .flexcontent {
