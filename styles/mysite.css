@@ -84,18 +84,32 @@ footer {
     line-height: 1.75;
 }
 
+@media (max-width: 767px) {
+    #text {
+        font-size: 1rem;
+        /* Or a smaller size */
+    }
+}
+
 #target {
     font-weight: bold;
 }
 
 #cursor {
     width: 2px;
-    height: 2rem;
+    height: 1.75rem;
     background-color: #000000;
     display: inline-block;
     position: relative;
     top: .3rem;
     animation: blink 0.8s infinite;
+}
+
+@media (max-width: 767px) {
+    #cursor {
+        height: 1rem;
+        top: .1rem;
+    }
 }
 
 @keyframes blink {
@@ -104,12 +118,6 @@ footer {
     }
 }
 
-@media (max-width: 767px) {
-    #text {
-        font-size: 1rem;
-        /* Or a smaller size */
-    }
-}
 
 #build {
     /* display: inline-block; */
