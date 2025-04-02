@@ -1,1 +1,1 @@
-Hi! This is the code for my website
+Hi! This repo contains the code for my website, lucasyuan.org, feel free to check it out!
