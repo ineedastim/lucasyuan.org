@@ -4,47 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Lucas</title>
+    <title>Lucas Yuan</title>
     <link rel="stylesheet" href="./styles/mysite.css">
-    <link rel="icon" type="image/x-icon" href="./images/siteicon.png">
+    <link rel="icon" type="image/x-icon" href="./images/siteiconwhite.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
     <script src="./typing.js"></script>
-    <script src="https://kit.fontawesome.com/2b94c8316d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1><i class="fa-solid fa-pen-nib"></i> <b>About Me.</b></h1>
-    <div class="container">
-        <div class="flexcontent">
-            <a id="imagelink" href="https://youtu.be/aoCU3_OIgv0?si=9EyZEq8Y1P4KviMe&t=8523" target="blank">
-                <image id="sitepic" src="./images/personalpicture.png"></image>
-            </a>
+    <nav>
+        <ul id="leftnav">
+            <image id="navicon" src="./images/siteicon.svg"></image>
+            <li>ABOUT</li>
+
+            <li><a href="#bottomrow">PROJECTS</a></li>
+        </ul>
+
+        <ul id="midnav">
+
+            <li><a href="https://github.com/ineedastim/lucasyuan.org" target="blank"><span
+                        class="mdi mdi-github"></span></i>
+                    lucasyuan.org has been redesigned, check out the repo!
+                </a></li>
+        </ul>
+
+        <ul id="rightnav">
+            <li class="socials"><a href="https://www.linkedin.com/in/lucasyuan1/" target="blank"><span
+                        class="mdi mdi-linkedin"></span>
+                    LINKEDIN</a></li>
+            <li class="socials"><a href="mailto:lucas.yuan.eng@gmail.com" target="blank">
+                    <span class="mdi mdi-email"></span>SAY
+                    HI!</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+
+        <div id="toptext">
+            <!-- <div class="flexcontent"> -->
+
             <div class="contentblock">
-                <h2 id="hi"><b>Hi! I'm Lucas 👋</b></h2>
+                <h1>Hi! I'm Lucas, <span id="greyed"><span id="target"></span><span id="cursor"></span>
+                        who's always
+                        building</span> <a href="https://www.youtube.com/watch?v=y_9KPs3dPuQ" target="blank"
+                        id="robots">robots.</a></h1>
                 <p id="text">
-                    <span id="target"></span><span id="cursor"></span> who's always building <a
-                        href="https://www.youtube.com/watch?v=y_9KPs3dPuQ" target="blank" id="robots">robots</a>.
-                    <br> I've worked in labs, makerspaces, and product development.
+                    I've worked in labs, makerspaces, and product development.
                     <br> Right now, I'm focused on web dev.
                 </p>
-                <!-- <div id="contactrow"> -->
-                <p id="build">Always looking to build some more:</p>
-                <!-- <button id="discord"><a id="discordlink" href="http://discord.com/users/672228841451945984"
-                        target="blank"><i class="fa-brands fa-discord"></i> @stimcanisters</a></button> -->
+                <!-- <p id="build">Always looking to build some more:</p>
+
                 <button id="linkedin"><a id="linkedinlink" href="https://www.linkedin.com/in/lucasyuan1/"
                         target="blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a></button>
                 <button id="email"><a id="emaillink" href="mailto:lucas.yuan.eng@gmail.com" target="blank"><i
-                            class="fa-solid fa-envelope"></i> Email Me</a></button>
+                            class="fa-solid fa-envelope"></i> Email Me</a></button> -->
                 <!-- </div> -->
-
             </div>
         </div>
+
+
+        <div class="animated-bg"></div>
+
+        <div id="projects">
+            <div id="projectslabel">BITS OF ME ↓</div>
+
+            <div id="toprow">
+                <a href="https://www.youtube.com/watch?v=y_9KPs3dPuQ" target="blank">
+                    <div class="imagewrapper">
+                        <img id="genburender" src="./images/GenbuRender.svg">
+
+                        <div class="textwrapper">
+                            <p>Genbu</p>
+                            <div class="indicator">
+                                <span class="dot robotics"></span>
+                                Robotics
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?si=9EyZEq8Y1P4KviMe&t=8523&v=aoCU3_OIgv0&feature=youtu.be"
+                    target="blank">
+                    <div class="imagewrapper">
+                        <img id="worldsdriving" src="./images/WorldsDriving.svg">
+                        <div class="textwrapper">
+                            <p>FTC Centerstage Worlds</p>
+                            <div class="indicator">
+                                <span class="dot robotics"></span>
+                                Robotics
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=2OcdmX9KYIw&" target="blank">
+                    <div class="imagewrapper">
+                        <img id="printinggif" src="./images/VoronPrinting.gif">
+                        <div class="textwrapper">
+                            <p>Voron 2.4</p>
+                            <div class="indicator">
+                                <span class="dot hardware"></span>
+                                Hardware
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div id="bottomrow">
+                <a href="https://www.wsoctv.com/news/local/carolina-strong-matthews-is-home-an-international-champion-robotics-team/GBXGEGIBCRG3DOT5GZMQEISBVM/"
+                    target="blank">
+                    <div class="imagewrapper">
+                        <img id="wsoc" src="./images/WSOC.svg">
+                        <div class="textwrapper">
+                            <p>WSOC TV</p>
+                            <div class="indicator">
+                                <span class="dot media"></span>
+                                Media
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.goodreads.com/book/show/195888801-why-machines-learn" target="blank">
+                    <div class="imagewrapper">
+                        <img id="book" src="./images/WhyMachinesLearn.svg">
+                        <div class="textwrapper">
+                            <p>What I'm Reading</p>
+                            <div class="indicator">
+                                <span class="dot learning"></span>
+                                Learning
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
     </div>
-    <footer><i class="fa-brands fa-github"></i><a id="githublink" href="https://github.com/ineedastim/lucasyuan.org"
-            target="blank"> Built By: Me</a></footer>
+
+    <!-- <a id="imagelink" href="https://youtu.be/aoCU3_OIgv0?si=9EyZEq8Y1P4KviMe&t=8523" target="blank">
+                <image id="sitepic" src="./images/personalpicture.png"></image>
+            </a> -->
+    <footer></footer>
 </body>
 
 </html>

@@ -1,48 +1,89 @@
 body {
-    margin: 0
+    margin: 0;
+    background: #1f1f1f;
+    background-image:
+        linear-gradient(to right, rgba(209, 209, 209, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(209, 209, 209, 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23aaaaaa" stroke="%23aaaaaa" width="12px" height="12px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+    height: 100vh;
 }
 
-h1 {
-    font-size: 2.25rem;
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    margin-left: 40px;
-    margin-top: 20px;
-    font-weight: 400;
+
+a {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23aaaaaa88" stroke="%23aaaaaa88" width="12px" height="12px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+}
+
+
+nav {
+    display: flex;
+    color: #aaaaaa;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Geist Mono";
     font-style: normal;
-    text-align: left;
-    line-height: 1.75;
-    color: #bdbdbd;
+    font-size: .75rem;
+    border-bottom: .25px solid #555555;
 }
 
-footer {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    font-size: 16px;
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    margin-left: 40px;
-    margin-top: 20px;
-    font-weight: 400;
-    font-style: normal;
-    text-align: left;
-    line-height: 1.75;
-    color: #bdbdbd;
-
+#navicon {
+    height: 1rem;
+    width: auto
 }
+
+#leftnav,
+#rightnav,
+#midnav {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 20px
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #aaaaaa;
+    font-family: "Geist Mono";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    transition-duration: .25s;
+}
+
+nav .mdi {
+    font-size: 1rem;
+    padding: 6px
+}
+
+#target {
+    background: linear-gradient(90deg, #00C9FF, #92FE9D);
+    /* example gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 #robots {
     text-decoration: underline;
+    text-decoration-style: dotted;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
-    color: #000000
+    color: #ffffff;
+    transition: all 0.25s ease-in-out;
 }
 
-/* #discordlink {
-    text-decoration: none;
-    color: #636cec
-} */
+#robots:hover {
+    color: #aaaaaa;
+}
+
+
 
 #linkedinlink {
     text-decoration: none;
@@ -55,19 +96,15 @@ footer {
     color: #555555;
 }
 
-#githublink {
-    text-decoration: underline;
-    color: #bdbdbd
-}
-
-#hi {
+h1 {
     font-size: 3.25rem;
-    font-family: "Manrope", sans-serif;
+    font-family: "Crimson Pro", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 200;
+    font-style: italic;
     margin: 0px;
     text-align: left;
+    color: #ffffff
 }
 
 @media (max-width: 767px) {
@@ -79,30 +116,29 @@ footer {
 
 #text {
     font-size: 1.75rem;
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     text-align: left;
     margin: 0px;
-    line-height: 1.75;
+    padding-top: 1.5rem;
+    color: #cccccc
 }
 
 @media (max-width: 767px) {
     #text {
         font-size: 1rem;
-        /* Or a smaller size */
     }
 }
 
-#target {
-    font-weight: bold;
-}
+
 
 #cursor {
     width: 2px;
-    height: 1.75rem;
-    background-color: #000000;
+    height: 2.5rem;
+    background-color: #ffffff;
+    transform: rotate(14deg);
     display: inline-block;
     position: relative;
     top: .3rem;
@@ -123,126 +159,15 @@ footer {
 }
 
 
-#build {
-    /* display: inline-block; */
-    font-size: 1.125rem;
-    color: #bdbdbd;
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-#sitepic {
-    width: 20%;
-    height: auto;
-    border-radius: 3.15rem;
-    margin-left: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #bdbdbd;
-    box-shadow: 0px 0px 10px 2px #bdbdbd;
-    transition: all 0.25s ease-in-out;
-}
-
-@media (max-width: 767px) {
-    #sitepic {
-        display: none;
-    }
-}
-
-#imagelink {
-    display: contents;
-}
-
-#sitepic:hover {
-    transform: scale(.99);
-}
-
-/* #discord {
-    font-family: "Manrope", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #636cec;
-    background-color: #8ea2e9;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
-    transition: all 0.25s ease-in-out;
-
-}
-
-#discord:hover {
-    transform: scale(.96);
-} */
-
-
-#linkedin {
-    font-family: "Manrope", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #0077b5;
-    background-color: #a9d6ee;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
-    transition: all 0.25s ease-in-out;
-
-}
-
-#linkedin:hover {
-    transform: scale(.96);
-}
-
-#email {
-    font-family: "Manrope", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #555555;
-    background-color: #dddddd;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
-    margin-left: 10px;
-    transition: all 0.25s ease-in-out;
-
-}
-
-#email:hover {
-    transform: scale(.96);
-}
-
-/* #contactrow {
+#toptext {
     display: flex;
     flex-direction: row;
     align-items: center;
-} */
-
-.container {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    align-items: center;
-    top: 30%;
-    left: 20%;
+    padding: 2.5%;
 }
 
 @media (max-width: 767px) {
-    .container {
+    #toptext {
         display: flex;
         flex-direction: row;
         position: fixed;
@@ -252,11 +177,189 @@ footer {
     }
 }
 
-.flexcontent {
+#container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
-.contentblock {
-    margin-left: 50px;
+#projects {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 95%;
 }
+
+#projectslabel {
+    color: #aaaaaa;
+    font-family: "Geist Mono";
+    font-size: .75rem;
+    align-self: flex-start;
+}
+
+#toprow,
+#bottomrow {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    margin: 10px;
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+#toprow {
+    align-items: flex-end;
+}
+
+#bottomrow {
+    align-items: flex-start;
+}
+
+#toprow a,
+#bottomrow a {
+    text-decoration: none;
+}
+
+.imagewrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #555555;
+    padding: 4px;
+    border-radius: 22px;
+    transition: all 0.25s ease-in-out;
+}
+
+.imagewrapper:hover {
+    transform: scale(1.01);
+    background-color: #aaaaaa
+}
+
+
+.imagewrapper img {
+    border-radius: 18px
+}
+
+.textwrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .5rem;
+}
+
+.textwrapper p {
+    color: #cccccc;
+    font-family: "Geist Mono";
+    font-weight: 400;
+    font-size: .75rem;
+    padding: .65rem;
+    background-color: #1f1f1f;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.textwrapper .indicator {
+    color: #cccccc;
+    font-family: "Geist Mono";
+    font-weight: 400;
+    font-size: .75rem;
+    padding: .65rem;
+    background-color: #1f1f1f;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+.dot {
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.dot.robotics {
+    background-color: #7df090;
+}
+
+.dot.hardware {
+    background-color: #6177f1;
+}
+
+.dot.media {
+    background-color: #a858f3;
+}
+
+.dot.learning {
+    background-color: #7de3f0;
+}
+
+#container {
+    opacity: 0;
+    transform: translateY(30px);
+    /* Start 30px below */
+    animation: fadeSlideUp 1s ease-out forwards;
+    /* Apply animation */
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        /* Start position */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Final position */
+    }
+}
+
+
+/* #genburender {
+    max-width: 30%;
+} */
+
+/* #worldsdriving {
+    max-width: 35%;
+}
+
+#printinggif {
+    max-width: 20%;
+}
+
+#wsoc {
+    max-width: 50%
+}
+
+#book {
+    max-width: 25%;
+} */
+
+
+/* footer {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 16px;
+    font-family: "Geist Mono";
+    font-optical-sizing: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    line-height: 1.75;
+    color: #bdbdbd;
+
+} */
