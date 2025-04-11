@@ -25,6 +25,11 @@ nav {
     font-style: normal;
     font-size: .75rem;
     border-bottom: .25px solid #555555;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #navicon {
@@ -40,7 +45,7 @@ nav {
     flex-direction: row;
     align-items: center;
     padding: 0px 20px;
-    gap: 20px
+    gap: 20px;
 }
 
 nav ul li a {
@@ -231,7 +236,18 @@ h1 {
     padding: 4px;
     border-radius: 22px;
     transition: all 0.25s ease-in-out;
+    width: 100%;
+    max-width: 450px;
 }
+
+#worldsdriving {
+    max-width: 550px;
+}
+
+#wsoc {
+    max-width: 650px;
+}
+
 
 .imagewrapper:hover {
     transform: scale(1.01);
@@ -240,7 +256,9 @@ h1 {
 
 
 .imagewrapper img {
-    border-radius: 18px
+    border-radius: 18px;
+    width: 100%;
+    height: auto;
 }
 
 .textwrapper {
@@ -303,13 +321,30 @@ h1 {
     background-color: #7de3f0;
 }
 
-#container {
+nav {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    /* Apply animation */
+}
+
+
+#toptext {
     opacity: 0;
     transform: translateY(30px);
     /* Start 30px below */
     animation: fadeSlideUp 1s ease-out forwards;
     /* Apply animation */
 }
+
+#projects {
+    opacity: 0;
+    transform: translateY(30px);
+    /* Start 30px below */
+    animation: fadeSlideUp 1.25s ease-out forwards;
+    animation-delay: .25s;
+    /* Apply animation */
+}
+
 
 @keyframes fadeSlideUp {
     0% {
@@ -325,41 +360,148 @@ h1 {
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* Start position */
+    }
 
-/* #genburender {
-    max-width: 30%;
-} */
-
-/* #worldsdriving {
-    max-width: 35%;
+    100% {
+        opacity: 1;
+        /* Final position */
+    }
 }
 
-#printinggif {
-    max-width: 20%;
+
+
+
+/* Responsive styles for tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    #text {
+        font-size: 1.5rem;
+    }
+
+    .imagewrapper {
+        max-width: 300px;
+    }
 }
 
-#wsoc {
-    max-width: 50%
+/* Responsive styles for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #leftnav,
+    #rightnav,
+    #midnav {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #midnav {
+        display: none;
+        /* Hide the middle nav on mobile */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #text {
+        font-size: 1.1rem;
+        padding-top: 1rem;
+    }
+
+    #toptext {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    #projects {
+        padding: 1rem;
+        width: 100%;
+        margin: 1.5rem auto 0;
+        box-sizing: border-box;
+    }
+
+    .imagewrapper {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #worldsdriving {
+        max-width: 300px;
+        width: auto;
+    }
+
+    #wsoc {
+        max-width: 300px;
+        width: auto;
+    }
+
+    #toprow,
+    #bottomrow {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .textwrapper {
+        flex-direction: row;
+        gap: 0.5rem;
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
-#book {
-    max-width: 25%;
-} */
+/* Restore the small mobile breakpoint */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
 
+    #text {
+        font-size: 1rem;
+    }
 
-/* footer {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    font-size: 16px;
-    font-family: "Geist Mono";
-    font-optical-sizing: auto;
-    margin-left: 40px;
-    margin-top: 20px;
-    font-weight: 400;
-    font-style: normal;
-    text-align: left;
-    line-height: 1.75;
-    color: #bdbdbd;
+    #leftnav,
+    #rightnav {
+        font-size: 0.7rem;
+    }
 
-} */
+    .mdi {
+        font-size: 0.9rem;
+    }
+
+    .imagewrapper {
+        max-width: 300px;
+    }
+
+    #worldsdriving {
+        max-width: 300px;
+    }
+
+    #wsoc {
+        max-width: 300px;
+    }
+}
