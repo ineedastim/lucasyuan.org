@@ -393,6 +393,13 @@ nav {
 /* Responsive styles for mobile devices (up to 767px) */
 @media (max-width: 767px) {
 
+    .imagewrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
     html,
     body {
         margin: 0;
